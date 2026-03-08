@@ -1,0 +1,19 @@
+UCI HAR Dataset/
+dataset.zip
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+videos/
+*.mp4
+*.gif
+*.png
+*.jpg
+
+.DS_Store
+Thumbs.db
