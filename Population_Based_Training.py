@@ -199,19 +199,6 @@ def welch_one_sided(
         p > confidence_level,
         device = source.device
     )
-
-while True:
-    source, target = torch.normal(0, 1, (2, 10, 10))
-    mask = welch_one_sided(source, target, confidence_level = .8)
-    print((target - source).mean(dim=0).numpy())
-    print(mask)
-    
-    if mask.any():
-        plt.boxplot(
-            (target - source).numpy(),
-            tick_labels = list(int(i) for i in mask)
-        )
-        break
     
 def pbt(
     config: dict,
